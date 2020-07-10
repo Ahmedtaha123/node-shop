@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const deleteFile = (filePath) => {
     try {
-        if (fs.existsSync(path)) {
+        if (fs.existsSync(filePath)) {
             let newFilePath;
             if(filePath.charAt(0) === '/'){
                 newFilePath = filePath.substr(1);
