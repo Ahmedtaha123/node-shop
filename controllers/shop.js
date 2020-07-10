@@ -6,7 +6,7 @@ const Product = require('../models/product');
 const Order = require('../models/order');
 const errorHandlers = require('./help-func/err-handler');
 
-const ITEMS_PER_PAGE = 1;
+const ITEMS_PER_PAGE = 2;
 
 exports.getIndex = (req, res, next) => {
     const page = +req.query.page || 1;
