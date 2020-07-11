@@ -2,6 +2,7 @@
     "env": {
         "MONGODB_USER": "ahmed",
         "MONGODB_PASSWORD": "fmy2042019",
-        "MONGODB_DEFUALT_DATABASE": "shop"
+        "MONGODB_DEFUALT_DATABASE": "shop",
+        "SENDGRID_APIKEY": "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"
     }
 }

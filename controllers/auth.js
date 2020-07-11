@@ -8,7 +8,7 @@ const errorHandlers = require('./help-func/err-handler');
 
 const transporter = nodemailer.createTransport(sendgridTransport({
     auth: {
-        api_key: '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'
+        api_key: process.env.SENDGRID_APIKEY
     }
 }));
 exports.getLogin = (req, res, next) => {    

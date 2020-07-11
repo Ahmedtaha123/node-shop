@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production MONGODB_USER=ahmed MONGODB_PASSWORD=fmy2042019 MONGODB_DEFUALT_DATABASE=shop node app.js",
+    "start": "NODE_ENV=production MONGODB_USER=ahmed MONGODB_PASSWORD=fmy2042019 MONGODB_DEFUALT_DATABASE=shop SENDGRID_APIKEY=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 node app.js",
     "start:dev": "nodemon app.js"
   },
   "author": "ahmed taha",
