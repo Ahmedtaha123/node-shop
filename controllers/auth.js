@@ -181,13 +181,14 @@ exports.postReset = (req, res, next) => {
             })
             .then(result => {
                 res.redirect('/');
+                const mainUrl = req.protocol+"://"+req.headers.host;
                 transporter.sendMail({
                     to: email,
                     from: 'ahmedtaha200079@gmail.com',
                     subject: 'Reset Password',
                     html: `
                         <p>You Requested a password reset</p>
-                        <p>Clik this <a href="${req.protocol}://${req.headers.host}/reset/${token}">Link</a> to set a new password.</p>
+                        <p>Clik this <a href="${mainUrl}/reset/${token}">Link</a> to set a new password.</p>
                     `
                 })
             })
